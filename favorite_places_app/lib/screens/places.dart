@@ -1,7 +1,8 @@
+import 'package:favorite_places_app/widget/places_list.dart';
 import 'package:flutter/material.dart';
 
-class PlaceListScreen extends StatelessWidget {
-  const PlaceListScreen({super.key});
+class PlacesScreen extends StatelessWidget {
+  const PlacesScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,6 +18,7 @@ class PlaceListScreen extends StatelessWidget {
           )
         ],
       ),
+      body: const PlacesList(places: []),
     );
   }
 }
