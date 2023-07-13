@@ -36,7 +36,13 @@ class _ImageInputState extends State<ImageInput> {
     Widget content = TextButton.icon(
       onPressed: _takePicture,
       icon: const Icon(Icons.camera),
-      label: const Text('Take Picture'),
+      label: Text(
+        'Take Picture',
+        textAlign: TextAlign.center,
+        style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+              color: Colors.white,
+            ),
+      ),
     );
 
     if (_selectedImage != null) {
